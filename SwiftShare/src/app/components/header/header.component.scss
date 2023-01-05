@@ -1,0 +1,28 @@
+header {
+    background-color: #888;
+    height: 100vh;
+}
+
+ul {
+    padding: 0 1em;
+    li {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 1em 0.5em;
+
+        mat-icon {
+            margin-right: 10px;
+        }
+    }
+}
+
+.section:hover, label:hover { cursor: pointer; }
+
+.section:hover {
+    font-weight: bold;
+    //transition: 100ms ease-out;
+    //transform: translateX(5px);
+    background-color: #ffffff20;
+    border-radius:50px;
+}
