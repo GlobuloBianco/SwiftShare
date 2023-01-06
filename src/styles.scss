@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a {text-decoration: none;}
+
+//light mode
+$light-head: #ffffff;
+$light-body: #FAFAFA;
+$light-text: #000000;
+$light-hover: #00000010;
+//dark mode
+$dark-head: #000000;
+$dark-body: #121212;
+$dark-text: #FAFAFA;
+$dark-hover: #ffffff10;

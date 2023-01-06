@@ -1,26 +1,43 @@
 <header class="d-flex flex-column justify-content-between">
     <div>
-        <img src="../../../assets/img/SwiftShare.svg" alt="SwiftShare" width="200px">
-        <ul>
+        <!-- logo -->
+        <img class="my-3 logo" src="../../../assets/img/SwiftShare.svg" alt="SwiftShare">
+        <!-- menu list -->
+        <ul class="mt-3">
             <li class="section">
-                <mat-icon id="homeIcon">home</mat-icon>
+                <mat-icon id="homeIcon" class="headerIcons">home</mat-icon>
                 <label for="homeIcon">Home</label>
             </li>
             <li class="section">
-                <mat-icon id="notificaIcon">free_breakfast</mat-icon>
+                <mat-icon id="notificaIcon" class="headerIcons">free_breakfast</mat-icon>
                 <label for="notificaIcon">Notifications</label>
             </li>
             <li class="section">
-                <mat-icon id="addIcon">add_circle_outline</mat-icon>
+                <mat-icon id="addIcon" class="headerIcons">add_circle_outline</mat-icon>
                 <label for="addIcon">Add</label>
+            </li>
+            <li class="section">
+                <mat-icon id="profileIcon" class="headerIcons">account_circle</mat-icon>
+                <label for="profileIcon">Profile</label>
             </li>
         </ul>
     </div>
-    <ul>
-        <li class="section">
-            <mat-icon id="homeIcon">home</mat-icon>
-            <label for="homeIcon">Others</label>
-        </li>
-    </ul>
 
+    <ul>
+        <li class="section" mat-button [matMenuTriggerFor]="more" #trigger="matMenuTrigger">
+            <mat-icon id="otherIcon" class="headerIcons">menu</mat-icon>
+            <label for="otherIcon">Others</label>
+        </li>
+        <!-- dropdown -->
+        <mat-menu #more="matMenu" class="bg-white">
+            <div mat-menu-item class="d-flex justify-content-between align-items-center">
+                <a class="px-4 align-center">Change theme</a>
+                <mat-icon>brightness_7</mat-icon>
+            </div>
+            <div mat-menu-item class="d-flex justify-content-between align-items-center">
+                <a class="px-4">Log out</a>
+                <mat-icon>timelapse</mat-icon>
+            </div>
+        </mat-menu>
+    </ul>
 </header>

@@ -8,6 +8,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import {MatIconModule} from '@angular/material/icon';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatIconModule
+        MatIconModule,
+        MatMenuModule
     ],
     providers: [],
     bootstrap: [AppComponent]

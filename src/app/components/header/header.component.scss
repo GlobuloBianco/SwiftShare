@@ -1,6 +1,15 @@
+@import '../../../styles.scss';
+
 header {
-    background-color: #888;
+    background-color: $light-head;
     height: 100vh;
+    width: 250px;
+    border-right: 1px solid #43434320;
+    color: $light-text;
+}
+
+a {
+    color: $light-text;
 }
 
 ul {
@@ -11,18 +20,48 @@ ul {
         list-style-type: none;
         padding: 1em 0.5em;
 
-        mat-icon {
-            margin-right: 10px;
+        .headerIcons {
+            font-size: 2.2em;
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
         }
     }
 }
 
-.section:hover, label:hover { cursor: pointer; }
+.btn:active {
+    border: none;
+    outline: none;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.section {
+    margin-top: 20px;
+    label {
+        font-size: 1.2em;
+    }
+}
 
 .section:hover {
-    font-weight: bold;
-    //transition: 100ms ease-out;
+    font-weight: 500;
     //transform: translateX(5px);
-    background-color: #ffffff20;
+    background-color: $light-hover;
     border-radius:50px;
 }
+
+.section:hover .headerIcons {
+    font-size: 2.4em;
+    transition: 200ms ease-out;
+}
+
+.section:hover, label:hover { cursor: pointer; }
+
+/*
+.mat-menu-item {}
+.mat-menu-content {
+    background-color: black;
+} */
