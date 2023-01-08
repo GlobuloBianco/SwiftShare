@@ -1,3 +1,10 @@
 <div class="body">
-    <p>posts works!</p>
+
+
+
+    <!-- no posts -->
+    <div *ngIf="vuoto" class="d-flex justify-content-center align-items-center flex-column h-100 display-5 text-center">
+        <img src="../../../assets/img/noPosts.png" alt="empty" width="200px">
+        <p>"Non ci sono post al momento"</p>
+    </div>
 </div>
